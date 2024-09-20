@@ -60,7 +60,7 @@ export default function CustomBuild() {
         clearInterval(timerInterval);
         setTimerInterval(null);
         setTimer(0);
-        navigate('/');
+        navigate('/viewbuild');
     }
 
     //Cancel build and clear states
@@ -75,7 +75,7 @@ export default function CustomBuild() {
         setCooler("");
         setPowersupply("");
         setStorage("");
-        navigate("/");
+        navigate("/viewbuild");
     }
 
     //Timer starts upon page loaded
