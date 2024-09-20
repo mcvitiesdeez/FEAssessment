@@ -34,7 +34,7 @@ export default function EditBuild() {
     const [cooler, setCooler] = useState(currentBuild.cooler)
     const [powersupply, setPowersupply] = useState(currentBuild.powersupply)
     const [storage, setStorage] = useState(currentBuild.storage)
-    const [favorite, setFavorite] = useState(false)
+    const [favorite, setFavorite] = useState(currentBuild.favorite)
     const [timeElapsed, setTimeElapsed] = useState(currentBuild.timeElapsed)
 
     function updateBuild(event) {

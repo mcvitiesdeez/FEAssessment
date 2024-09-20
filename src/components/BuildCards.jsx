@@ -30,7 +30,7 @@ export default function BuildCards({ build }) {
                     <Button variant="secondary" href={`/readbuild/${build.id}`} className="ms-2">
                         <i className="bi bi-search"></i>
                     </Button>
-                    <Button variant="secondary" href={`/editbuild/${build.id}`} className="ms-2">
+                    <Button variant="warning" href={`/editbuild/${build.id}`} className="ms-2">
                         <i className="bi bi-pencil"></i>
                     </Button>
                     <Button variant="danger" onClick={deleteBuild} className="ms-2">
