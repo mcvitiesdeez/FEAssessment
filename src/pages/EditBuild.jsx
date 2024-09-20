@@ -22,6 +22,9 @@ export default function EditBuild() {
     //Current ID
     const id = parseInt(useParams().id);
     const currentBuild = builds.filter((build) => build.id === id)[0];
+    console.log('--------------')
+    console.log(id)
+    console.log('--------------')
 
     //States
     const [title, setTitle] = useState(currentBuild.title)
@@ -42,6 +45,7 @@ export default function EditBuild() {
         const updatedBuilds = builds.map((build) => {
             if (build.id === id) {
                 return {
+                    id: build.id,
                     title,
                     description,
                     motherboard,

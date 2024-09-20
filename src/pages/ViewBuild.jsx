@@ -19,8 +19,6 @@ export default function ViewBuild() {
 }
 
 function BuildGroup({ builds }) {
-    console.log(typeof (builds))
-    console.log(builds.length)
     if (builds.length !== 0) {
         return builds.map((build) => {
             return (
