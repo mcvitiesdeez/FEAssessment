@@ -35,7 +35,7 @@ function Layout({ token, setToken }) {
     <>
       <Navbar bg="dark" variant='dark'>
         <Container>
-          <Navbar.Brand href="/">Home</Navbar.Brand>
+          <Navbar.Brand href="/"><i className="bi bi-pc-display"></i> Sigma PC Builder</Navbar.Brand>
           <Nav>
             {visibleLogin && (
               <Nav.Link href="login">Login</Nav.Link>

@@ -1,11 +1,13 @@
 import { useContext } from 'react'
 import { Button, Card } from 'react-bootstrap'
 import { BuildsContext } from '../contexts/BuildsContext'
+import './BuildCards.css'
 
 export default function BuildCards({ build }) {
     const favorite = build.favorite
     const border = favorite ? 'danger' : 'secondary';
     const favoriteText = favorite ? "It's favorite! So BUYY!" : 'Meehhh~ Get a better one.'
+    const favoriteBg = favorite ? 'bg-favorite' : 'bg-unfavorite'
 
     //Context
     const setBuilds = useContext(BuildsContext).setBuilds
@@ -20,7 +22,7 @@ export default function BuildCards({ build }) {
     return (
         <>
             <Card border={border} className='my-3'>
-                <Card.Header>{favoriteText}</Card.Header>
+                <Card.Header className={favoriteBg}>{favoriteText}</Card.Header>
                 <Card.Body>
                     <Card.Title>{build.title}</Card.Title>
                     <Card.Text>
