@@ -43,8 +43,8 @@ function Layout({ token, setToken }) {
             {visibleLogout && (
               <Nav.Link onClick={Logout}>Log out</Nav.Link>
             )}
-            <Nav.Link href="custombuild">Build your PC</Nav.Link>
-            <Nav.Link href="viewbuild">View your builds</Nav.Link>
+            <Nav.Link href="custombuild">🔧Build your PC</Nav.Link>
+            <Nav.Link href="viewbuild">🔎View your builds</Nav.Link>
             <Nav.Link href=""></Nav.Link>
           </Nav>
         </Container>
